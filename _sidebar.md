@@ -3,7 +3,7 @@
 
 * [HOME](./)
 
-* [Documentations](./tutorials/index)
+* [Documentation Examples](./tutorials/index)
   * [About the product](./docs/about-the-product)
   * [Overall Project process](./docs/process-overall)
   * [Compute Infrastructure Introduction](./docs/mtfuji-intro)
