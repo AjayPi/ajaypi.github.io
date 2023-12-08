@@ -14,7 +14,7 @@ Stargate is Toyota’s global development tools and software collaboration platf
 <table style="border-radius: 10px";
               "border: 5px solid #154360";>
   <tr>
-    <td style="vertical-align:middle"><img src="./images/welcomdocnew1.png"></td>
+    <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew1.png"></td>
     <td><span style="color: #1565C0"><b>Lower cost of maintenance,operations </b></span>
   </br>
   <ul>
