@@ -1,11 +1,11 @@
 # GitHub EMU Runners
 
 > [!NOTE]  
-> Hyperlinks are only for reference and may noy work
+> Hyperlinks are only for reference and may noy work.
 
-!!! Warning
-
-    This document refers to GitHub EMU, which is not yet generally available. For information about GitHub Runers on GitHub Enterprise please <a href="/docs/default/component/"The Product"-welcome-guides/manuals/github/github-runners/">refer to this document</a>.
+> [!Warning]
+>
+> This document refers to GitHub EMU, which is not yet generally available. For information about GitHub Runers on GitHub Enterprise please refer to this document.
 
 ## TLDR
 
