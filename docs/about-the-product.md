@@ -21,7 +21,7 @@ Stargate is Toyota’s global development tools and software collaboration platf
         <li>1 vs “N” environments</li>
         <li>Standard vs Multiple tools </li>
       <li>Security monitoring (1 vs “N”)</li></td>
-  <td style="vertical-align:middle"><img src="./images/welcomdocnew2.png"></td>
+  <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew2.png"></td>
   <td><span style="color: #1565C0"><b>Lower cost of software development</b></span>
   </br>
   <ul>
@@ -30,7 +30,7 @@ Stargate is Toyota’s global development tools and software collaboration platf
     </ul>
   </tr>  
   <tr>
-  <td style="vertical-align:middle"><img src="./images/welcomdocnew3.png"></td>
+  <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew3.png"></td>
   <td><span style="color: #1565C0"><b>Faster turnaround time to meet business requirements</b></span>
   </br>
   <ul>
@@ -38,7 +38,7 @@ Stargate is Toyota’s global development tools and software collaboration platf
   <li>Shorter change lead time</li>
     </ul>
     </td>
-    <td style="vertical-align:middle"><img src="./images/welcomdocnew4.png"></td>
+    <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew4.png"></td>
     <td><span style="color: #1565C0"><b>Higher Productivity</b></span>
   </br>
   <ul>
@@ -48,7 +48,7 @@ Stargate is Toyota’s global development tools and software collaboration platf
     </ul>
   </tr>  
   <tr>
-  <td style="vertical-align:middle"><img src="./images/welcomdocnew5.png"></td>
+  <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew5.png"></td>
   <td><span style="color: #1565C0"><b>Better Security</b></span>
   </br>
   <ul>
@@ -57,7 +57,7 @@ Stargate is Toyota’s global development tools and software collaboration platf
   <li>Software assets stored consistently</li>
   </ul>
   </td>
-  <td style="vertical-align:middle"><img src="./images/welcomdocnew6.png"></td>
+  <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew6.png"></td>
   <td><span style="color: #1565C0"><b>Easier External Collaboration</b></span>
   </br>
   <ul>
@@ -66,7 +66,7 @@ Stargate is Toyota’s global development tools and software collaboration platf
   </td>
   </tr>  
   <tr>
-  <td style="vertical-align:middle"><img src="./images/welcomdocnew7.png"></td>
+  <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew7.png"></td>
   <td><span style="color: #1565C0"><b>Cultural Transformation: Global + Software</b></span>
   </br>
   <ul>
@@ -74,7 +74,7 @@ Stargate is Toyota’s global development tools and software collaboration platf
   <li>Builds software culture</li>
   </ul>
   </td>
-  <td style="vertical-align:middle"><img src="./images/welcomdocnew8.png"></td>
+  <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew5.png"/images/welcomdocnew8.png"></td>
   <td><span style="color: #1565C0"><b>Focused Strategic Partnerships</b></span>
   </br>
   <ul>
@@ -103,15 +103,15 @@ Stargate is Toyota’s global development tools and software collaboration platf
   <tr>
         <td><p style="text-align: center"><b>Build</b></p>
           <p>Development tooling built and managed in a way that helps solve Legal, IP and tax challenges to enable software development collaboration between Toyota and affiliated companies.</p>
-<img src ="./images/welcomdoc12.png"></td>
-        <td style="vertical-align:middle"><img src="./images/Welcomarrow.png"></td>
+<img src ="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdoc12.png"></td>
+        <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/Welcomarrow.png"></td>
         <td><p style="text-align: center"><b>Run</b></p>
           <p>A multi-cloud runtime to deliver software quickly and securely by developers who have no knowledge of infrastructure.</p>
-          <img src ="./images/welcomdoc11.png"></td>
-        <td style="vertical-align:middle"><img src ="./images/Welcomarrow.png"></td>
+          <img src ="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdoc11.png"></td>
+        <td style="vertical-align:middle"><img src ="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/Welcomarrow.png"></td>
         <td><p style="text-align: center"><b>Monitor</b></p>
           <p>An observability platform providing consistent logging, metrics, alerting and tracing for infrastructure and applications.</p>
-          <img src="./images/welcomdoc10.png"></td>
+          <img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdoc10.png"></td>
       </tr>
   </table>
 
@@ -130,7 +130,7 @@ Stargate is a suite of connected services and resources, the following shows the
 <p style="vertical-align:middle";
            "justify-content: center";
            "align-items: center";>
-<img src="./images/welcomdocrev1-rev.png">
+<img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocrev1-rev.png">
   </p>
 <p><b>Note</b>:  * Gitlab is supported for approved projects only (IVI Digital Cockpit, and Arene Vertex & SPL)</p>
 
