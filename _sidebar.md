@@ -4,10 +4,11 @@
 * [HOME](./)
 
 * [Documentation Examples](./tutorials/index)
-  * [About the product](./docs/about-the-product)
+  * [About "The Product"](./docs/about-the-product)
   * [Overall Project process](./docs/process-overall)
-  * [Compute Infrastructure Introduction](./docs/mtfuji-intro)
+  * [Compute Infrastructure : An Introduction](./docs/mtfuji-intro)
   * [GitHub EMU Runners: showing mermaid diagrams](./docs/githut-EMU-runners-hyperlink)
+  * [Migration of GitHub Enterprise to EMU](./docs/migration-from-ghe)
 
 * [About](./about/index)
 
