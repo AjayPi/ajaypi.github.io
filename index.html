@@ -10,11 +10,7 @@
   <title>Ajay's Profile</title>
   <!-- Include the Mermaid.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
-</head>
-<body>
-    {% raw %}{{ content }}{% endraw %}
-
-    <!-- Initialize Mermaid -->
+  <!-- Initialize Mermaid -->
     <script>
     var config = {
         startOnLoad:true,
@@ -27,6 +23,9 @@
     mermaid.initialize(config);
     window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
     </script>
+</head>
+<body>
+    
 </head>
 <body>
   <div id="app"></div>
