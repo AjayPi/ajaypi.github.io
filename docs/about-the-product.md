@@ -1,15 +1,15 @@
 
 
-## Stargate Product Overview
+## "The Product" Product Overview
 
-## What is Stargate?
+## What is "The Product"?
 
-Stargate is Toyota’s global development tools and software collaboration platform, it includes:
+"The Product" is "The Company"’s global development tools and software collaboration platform, it includes:
 
-* **A suite of development tooling** [(GitHub, Jira, Confluence, Artifactory, etc)](./list-of-tools.md) built and managed in a way that helps solve **Legal, IP and tax challenges** to **enable software development collaboration** between Toyota and affiliated companies.
+* **A suite of development tooling** [(GitHub, Jira, Confluence, Artifactory, etc)](./list-of-tools.md) built and managed in a way that helps solve **Legal, IP and tax challenges** to **enable software development collaboration** between "The Company" and affiliated companies.
 * A Compute Infrastructure that **allows software to be delivered quickly and securely** by developers who have no knowledge of infrastructure (coming soon).
 
-## How Stargate helps you 
+## How "The Product" helps you 
  
 <table style="border-radius: 10px";
               "border: 5px solid #154360";>
@@ -85,9 +85,9 @@ Stargate is Toyota’s global development tools and software collaboration platf
       </table>
 
 <details>
-  <summary>Stargate: More than a platform to automate access to tools</summary>
+  <summary>"The Product": More than a platform to automate access to tools</summary>
   </br>
-  <p>An example of how Stargate works, this is just a sample and does not include a full list of Stargate tools:</p>
+  <p>An example of how "The Product" works, this is just a sample and does not include a full list of "The Product" tools:</p>
   </br>
   <table style="border-radius: 14px";
                   "border: 5px solid #73AD21";>
@@ -102,7 +102,7 @@ Stargate is Toyota’s global development tools and software collaboration platf
       
   <tr>
         <td><p style="text-align: center"><b>Build</b></p>
-          <p>Development tooling built and managed in a way that helps solve Legal, IP and tax challenges to enable software development collaboration between Toyota and affiliated companies.</p>
+          <p>Development tooling built and managed in a way that helps solve Legal, IP and tax challenges to enable software development collaboration between "The Company" and affiliated companies.</p>
 <img src ="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdoc12.png"></td>
         <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/Welcomarrow.png"></td>
         <td><p style="text-align: center"><b>Run</b></p>
@@ -123,9 +123,9 @@ Stargate is Toyota’s global development tools and software collaboration platf
   </ul>
   </details>
 
-## What does Stargate Look Like
+## What does "The Product" Look Like
   
-Stargate is a suite of connected services and resources, the following shows the functional interactions and view of Stargate, defining the services and resources that are currently supported or planned for development and future releases.
+"The Product" is a suite of connected services and resources, the following shows the functional interactions and view of "The Product", defining the services and resources that are currently supported or planned for development and future releases.
 
 <p style="vertical-align:middle";
            "justify-content: center";
@@ -134,7 +134,7 @@ Stargate is a suite of connected services and resources, the following shows the
   </p>
 <p><b>Note</b>:  * Gitlab is supported for approved projects only (IVI Digital Cockpit, and Arene Vertex & SPL)</p>
 
-## Requesting Support for Stargate
+## Requesting Support for "The Product"
 
 <p>If you have questions or need support, refer to the Contact Us to find out how to contact our support team.</p>
  
