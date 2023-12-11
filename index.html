@@ -20,6 +20,19 @@
     
 <body>
   <div id="app"></div>
+  <!-- Customize the Mermaid configuration -->
+    <script>
+        window.$docsify = {
+            name: '',
+            repo: '',
+            loadSidebar: true,
+            auto2top: true,
+            coverpage: true,
+            mermaidConfig: {
+                querySelector: ".mermaid"
+            }
+        };
+    </script>
   <script>
     window.$docsify = {
       el: "#app",
@@ -30,18 +43,7 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 
-    <!-- Initialize Mermaid -->
-    <script>
-    var config = {
-        startOnLoad:true,
-        theme: 'forest',
-        flowchart: {
-            useMaxWidth:false,
-            htmlLabels:true
-        }
-    };
-    mermaid.initialize(config);
-    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+   
     </script>
 </body>
 </html>
