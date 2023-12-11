@@ -10,7 +10,22 @@
   <title>Ajay's Profile</title>
   <!-- Include the Mermaid.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
-  <!-- Initialize Mermaid -->
+  
+</head>
+    
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      el: "#app",
+      repo: 'https://github.com/AjayPi/ajaypi.github.io.git',
+      loadSidebar: true
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+
+    <!-- Initialize Mermaid -->
     <script>
     var config = {
         startOnLoad:true,
@@ -23,19 +38,5 @@
     mermaid.initialize(config);
     window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
     </script>
-</head>
-<body>
-    
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      el: "#app",
-      repo: 'https://github.com/AjayPi/ajaypi.github.io.git',
-      loadSidebar: true
-    }
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
