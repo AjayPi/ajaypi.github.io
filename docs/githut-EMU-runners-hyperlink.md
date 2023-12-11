@@ -9,7 +9,7 @@
 
 ## TLDR
 
-- We provide ["The Product" self-hosted runners](#"The Product"-self-hosted-runners) for GitHub EMU, this is recommended way to run your GitHub Actions
+- We provide self-hosted runners for GitHub EMU, this is recommended way to run your GitHub Actions
 - For some use cases you can use [GitHub hosted runners](#github-hosted-runners)
 - We also configure a special type of runners called ["The Company" Connected Runners](#"The Company"-connected-runners), which can connect to on-premise hardware and devices in "The Company" network
 
