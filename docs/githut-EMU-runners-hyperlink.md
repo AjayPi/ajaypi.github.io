@@ -15,6 +15,11 @@
 
 ## How to decide which runners to use?
 
+> [!NOTE]  
+> Due to rendering issue the Mermaid diagram is not rendering on the site.
+
+<img src ="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/runner-selection.png">
+
 ```mermaid
 flowchart TD
     A[Start] --> B{Do you need access to on premise hardware or software ?};
