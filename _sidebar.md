@@ -11,7 +11,8 @@
   * [Migration of GitHub Enterprise to EMU](./docs/migration-from-ghe)
   * [Status Page](./docs/status-page)
   * [Documentation using Confluence](./docs/other-documentation)
-
+* [Documentation Examples](./tutorials/index)
+  * [Wavefront for your K8 instance"](./tutorials/wavefront-desktop)
 * [About](./about/index)
 
 * [Contact](./contact/index)
