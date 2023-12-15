@@ -1,4 +1,4 @@
 
 # Tutorials 
 
-Examples of documentation using innovations in GitHub flavoured `markdown`.
+Examples of Tutorials and Guides.
