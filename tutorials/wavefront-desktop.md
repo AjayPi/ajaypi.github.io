@@ -138,6 +138,28 @@ pod.cpu.usage{source="python", namespace="default"}
 
 ### Create a line chart
 
-Once the data is in Wavefront, you can create a line chart to visualize it. In Wavefront, navigate to Browse > Chart Builder. Select Line Chart as the chart type. In the Source field, enter the metric name (cpu.usage). You can also add filters based on the tags we added earlier (namespace and pod).
+Once the data is in Wavefront, you can create a line chart to visualize it. In Wavefront, navigate to Browse > Chart Builder. Select Line Chart as the chart type. In the Source field, enter the metric name `cpu.usage`. You can also add filters based on the tags we added earlier `namespace` and `pod`.
 
 This query will show the CPU usage of the pods in the default namespace.
+
+1. Create a Line Chart in Wavefront
+
+- Log in to your Wavefront instance.
+- Click on `Browse` > `Chart`.
+- In the `Query Editor`, enter your query. For CPU usage, it might look something like this: `ts("cpu.usage")`.
+- Press `Enter` or click `Run Query` to see the line chart.
+
+2. Customize the Line Chart
+
+- Fine-tune the metrics displayed on the chart by customizing the query and applying filters and functions.
+- Use chart variables to set the time window, create alerts, and optimize display speed.
+- Change the legend to customize how the chart looks.
+- Set the time window on a chart to include metrics that stopped reporting.
+- Use a logarithmic Y axis for skewed data.
+- Filter out lines with minimum and maximum values.
+- Use IEC/Binary prefixes in the Y axis and legends.
+- Use dynamic units to optimize the display.
+
+Remember to replace `cpu.usage` with the actual metric name you’re using. 
+
+
