@@ -4,17 +4,12 @@
 
 **Wavefront** is a cloud-based monitoring and analytics platform. It allows you to collect, visualize, and analyze metrics, traces, and histograms from your applications and infrastructure. To use Wavefront, you need to have a **Wavefront account**. As "the Company" has a corporate account, you should be able to sign in to Wavefront using your corporate credentialshas a subscription.
 
-You also need to have a <div class="hover-text">Left
-  <span class="tooltip-text left">Tooltip Text</span>
-  
-</div><div class="tooltip">test
-  <span class="tooltiptext">A Wavefront cluster is a dedicated instance of Wavefront that hosts your data and dashboards.</span>
-</div>
- **Wavefront cluster** and an **API token**.  An API token is a secret key that allows you to send data to and query data from your Wavefront cluster.
+You also need to have a <a href="" title="A Wavefront cluster is a dedicated instance of Wavefront that hosts your data and dashboards.">**Wavefront Cluster**</a> and an <a href="" title="An API token is a secret key that allows you to send data to and query data from your Wavefront cluster.">**API token**.</a>
 
-To send data to Wavefront, you need to use a Wavefront sender. A Wavefront sender is a library or a tool that collects and formats data from your sources and sends it to Wavefront. Wavefront supports various types of senders, such as SDKs, agents, proxies, and integrations. You can choose the sender that best suits your needs and environment.
+To send data to Wavefront, you need to use a **Wavefront sender**. A Wavefront sender is a library or a tool that collects and formats data from your sources and sends it to Wavefront. Wavefront supports various types of senders, such as SDKs, agents, proxies, and integrations. You can choose the sender that best suits your needs and environment.
 
-To query data from Wavefront, you need to use the Wavefront Query Language. The Wavefront Query Language is a powerful and expressive language that allows you to manipulate and analyze data in Wavefront. You can use the Wavefront Query Language to create charts, alerts, and dashboards. You can also use the Wavefront UI or the Wavefront API to interact with the Wavefront Query Language.
+To query data from Wavefront, you need to use the **Wavefront Query Language**. The Wavefront Query Language is a powerful and expressive language that allows you to manipulate and analyze data in Wavefront. You can use the Wavefront Query Language to create charts, alerts, and dashboards. You can also use the Wavefront UI or the Wavefront API to interact with the Wavefront Query Language.
+
 This document provides a guide on how to add observability for desktop users using Python to connect to a Kubernetes environment. The observability portion will be handled by Wavefront.
 
 ## Prerequisites
