@@ -25,7 +25,8 @@
 ## Prerequisites
   
 ### Migration tooling
-  <ul>
+
+<ul>
     <li>GitHub CLI - https://github.com/cli/cli#installation </li>
     <li>GitHub CLI extension gh-gei - https://github.com/github/gh-gei#using-the-gei-cli</li> 
   </ul>
@@ -33,22 +34,23 @@
 GitHub CLI and the gh-gei extension are available for all platforms including Windows. However, the interactive script referenced in <a href="#1">Step 0</a> of the section below was created with Linux/Mac in mind. It may be able to execute on Windows Subsystem for Linux (WSL) but that hasn’t been tested.
   
 ### Permissions to use the tool to migrate the repositories.
-  <b>Source organization</b> (github.comp-the-product.com):
+
+<b>Source organization</b> (github.comp-the-product.com):
 <ul>
   <li>Organization owner role</li>
   <li><a href="https://docs.github.com/en/migrations/using-github-enterprise-importer/preparing-to-migrate-with-github-enterprise-importer/managing-access-for-github-enterprise-importer#personal-access-tokens-for-github-products">Personal Access Tokens</a> (classic, NOT a fine-grained personal access token) with following permissions:</li>
-	
+  	
 <ul>
-	<li>read:org</li>
+    <li>read:org</li>
     <li>repo (all permissions)</li>
 </ul>
 </ul>
-	
     
-  <b>Destination organization</b> (EMU github.com):
+<b>Destination organization</b> (EMU github.com):
   <ul>
     <li><a href="https://docs.github.com/en/migrations/using-github-enterprise-importer/preparing-to-migrate-with-github-enterprise-importer/granting-the-migrator-role-for-github-enterprise-importer#about-the-migrator-role">Migrator role for GitHub Enterprise Importer</a> (by default assigned to project admin, if you want to delegate this to a team member, please <a href ="mailto: pillai.ajay.m@gmail.com">contact us</a>.</li>
     <li><a href="https://docs.github.com/en/migrations/using-github-enterprise-importer/preparing-to-migrate-with-github-enterprise-importer/managing-access-for-github-enterprise-importer#personal-access-tokens-for-github-products">Personal Access Tokens</a> (classic, NOT a fine-grained personal access token) with following permissions:</li>
+
     <ul>
       <li>read:org</li>
       <li>repo (all permissions)</li>
@@ -74,7 +76,7 @@ GitHub CLI and the gh-gei extension are available for all platforms including Wi
   </ul>
 	
 <details>
-	<summary>Analyzing Steps</summary>
+  <summary>Analyzing Steps</summary>
 
 <ol>
   <li>Environment prerequisites: <a href ="https://nodejs.org/">Node.js</a> runtime environment, version 14 or greater.</li>
@@ -100,16 +102,16 @@ export GH_PAT=<Replace with PAT from the source org>
 <li>Execute the analyzer</li>
   
 ``` 
-node src/index.js GH-org -o <ORGName> -s <GHES GraphQL Endpoint>
-  
+node src/index.js GH-org -o <ORGName> -s <GHES GraphQL Endpoint> 
 <ORGName> : Source org name. for e.g. com-theproduct
-
 <GHES GraphQL Endpoint> : The GraphQL endpoint. for e.g.: https://github.tri-ad.tech/api/graphql or https://github.com-"The Product".com/api/graphql 
 ```
 
 <li>Result files in CSV format will be located in ${project-root}${org-name}-metrics example: org-metrics.csv repo-metrics.csv.</li>
 <li>Review the results to create a repository migration list.</li>
+
 </ol>
+
 </details>	
 
 ## Migration
