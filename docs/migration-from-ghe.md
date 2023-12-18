@@ -58,7 +58,7 @@ GitHub CLI and the gh-gei extension are available for all platforms including Wi
 <li>Since GitHub EMU is OpenID Connect (OIDC) authenticated, ensure SSO authorization is enabled for the destination organization when creating the Personal Access Token. See image below for reference.</li>
 </ul>
 
-<img src="../../../images/github-emu-migration/pat-sso-authorize.png">
+
     
 ### Analysis & Planning
     
@@ -81,15 +81,14 @@ GitHub CLI and the gh-gei extension are available for all platforms including Wi
   <li>Clone GitHub Migration Analyzer.</li>
   
 ```
-  git clone https://github.com/github/gh-migration-analyzer.git	</li>
-  cd <pathname of migration analyzer directory>  
+git clone https://github.com/github/gh-migration-analyzer.git
+cd <pathname of migration analyzer directory> 
 ```
 	
   <li>Install dependencies</li>
   
 ```
-npm install
-  
+npm install  
 ```
 	
 <li>Generate GitHub PAT with org:read scope and store in Environment variable.</li>
