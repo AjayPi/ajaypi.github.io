@@ -51,11 +51,11 @@ GitHub CLI and the gh-gei extension are available for all platforms including Wi
     <li><a href="https://docs.github.com/en/migrations/using-github-enterprise-importer/preparing-to-migrate-with-github-enterprise-importer/granting-the-migrator-role-for-github-enterprise-importer#about-the-migrator-role">Migrator role for GitHub Enterprise Importer</a> (by default assigned to project admin, if you want to delegate this to a team member, please <a href ="mailto: pillai.ajay.m@gmail.com">contact us</a>.</li>
     <li><a href="https://docs.github.com/en/migrations/using-github-enterprise-importer/preparing-to-migrate-with-github-enterprise-importer/managing-access-for-github-enterprise-importer#personal-access-tokens-for-github-products">Personal Access Tokens</a> (classic, NOT a fine-grained personal access token) with following permissions:</li>
 
-    <ul>
+<ul>
       <li>read:org</li>
       <li>repo (all permissions)</li>
       <li>workflow (all permissions)</li>
-    </ul>
+   </ul>
 	    
 <li>Since GitHub EMU is OpenID Connect (OIDC) authenticated, ensure SSO authorization is enabled for the destination organization when creating the Personal Access Token. See image below for reference.</li>
 </ul>
@@ -82,10 +82,13 @@ GitHub CLI and the gh-gei extension are available for all platforms including Wi
   <li>Environment prerequisites: <a href ="https://nodejs.org/">Node.js</a> runtime environment, version 14 or greater.</li>
   <li>Clone GitHub Migration Analyzer.</li>
   
-```
+<pre>
+  <code>
 git clone https://github.com/github/gh-migration-analyzer.git
+
 cd <pathname of migration analyzer directory>
-```
+</code>
+</pre>
 	
 <li>Install dependencies</li>
 
