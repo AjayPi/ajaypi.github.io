@@ -82,27 +82,26 @@ GitHub CLI and the gh-gei extension are available for all platforms including Wi
   <li>Environment prerequisites: <a href ="https://nodejs.org/">Node.js</a> runtime environment, version 14 or greater.</li>
   <li>Clone GitHub Migration Analyzer.</li>
   
-```javascript
+```python
 git clone https://github.com/github/gh-migration-analyzer.git
-
 cd<pathname of migration analyzer directory>
 ```
 	
 <li>Install dependencies</li>
 
-```
+```python
 npm install  
 ```
 	
 <li>Generate GitHub PAT with org:read scope and store in Environment variable.</li>
  
-```
+```python
 export GH_PAT=<Replace with PAT from the source org>  
 ```
 	
 <li>Execute the analyzer</li>
   
-``` 
+```python
 node src/index.js GH-org -o <ORGName> -s <GHES GraphQL Endpoint> 
 <ORGName> : Source org name. for e.g. com-theproduct
 <GHES GraphQL Endpoint> : The GraphQL endpoint. for e.g.: https://github.tri-ad.tech/api/graphql or https://github.com-"The Product".com/api/graphql 
@@ -112,7 +111,6 @@ node src/index.js GH-org -o <ORGName> -s <GHES GraphQL Endpoint>
 <li>Review the results to create a repository migration list.</li>
 
 </ol>
-
 </details>	
 
 ## Migration
