@@ -81,7 +81,12 @@ GitHub CLI and the gh-gei extension are available for all platforms including Wi
 <ol>
   <li>Environment prerequisites: <a href ="https://nodejs.org/">Node.js</a> runtime environment, version 14 or greater.</li>
   <li>Clone GitHub Migration Analyzer.</li>
-  
+	
+{% raw %}
+git clone https://github.com/github/gh-migration-analyzer.git
+cd<pathname of migration analyzer directory>
+{% endraw %}  
+
 ```python
 git clone https://github.com/github/gh-migration-analyzer.git
 cd<pathname of migration analyzer directory>
