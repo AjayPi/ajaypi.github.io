@@ -83,10 +83,12 @@ GitHub CLI and the gh-gei extension are available for all platforms including Wi
   <li>Clone GitHub Migration Analyzer.</li>
 </ol>
 	
-```
+<pre> 
+<code>
 git clone https://github.com/github/gh-migration-analyzer.git
-cd<pathname of migration analyzer directory>
-```
+cd(pathname of migration analyzer directory)
+</code>
+</pre>
 
 <ol start="3">	
 <li>Install dependencies</li>
@@ -108,11 +110,13 @@ export GH_PAT=<Replace with PAT from the source org>
 <li>Execute the analyzer</li>
  </ol>
  
-```python
-node src/index.js GH-org -o <ORGName> -s <GHES GraphQL Endpoint> 
-<ORGName> : Source org name. for e.g. com-theproduct
-<GHES GraphQL Endpoint> : The GraphQL endpoint. for e.g.: https://github.tri-ad.tech/api/graphql or https://github.com-"The Product".com/api/graphql 
-```
+<pre>
+<code>
+node src/index.js GH-org -o (ORGName) -s (GHES GraphQL Endpoint) 
+(ORGName) : Source org name. for e.g. com-theproduct
+<GHES GraphQL Endpoint) : The GraphQL endpoint. for e.g.: https://github.tri-ad.tech/api/graphql or https://github.com-"The Product".com/api/graphql 
+</code>
+</pre>
 
 <ol start="6">
 <li>Result files in CSV format will be located in ${project-root}${org-name}-metrics example: org-metrics.csv repo-metrics.csv.</li>
