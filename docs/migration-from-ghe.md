@@ -114,7 +114,7 @@ export GH_PAT=<Replace with PAT from the source org>
 <code>
 node src/index.js GH-org -o (ORGName) -s (GHES GraphQL Endpoint) 
 (ORGName) : Source org name. for e.g. com-theproduct
-<GHES GraphQL Endpoint) : The GraphQL endpoint. for e.g.: https://github.tri-ad.tech/api/graphql or https://github.com-"The Product".com/api/graphql 
+(GHES GraphQL Endpoint) : The GraphQL endpoint. for e.g.: https://github.tri-ad.tech/api/graphql or https://github.com-"The Product".com/api/graphql 
 </code>
 </pre>
 
