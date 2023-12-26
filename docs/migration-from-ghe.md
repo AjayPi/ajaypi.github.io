@@ -94,7 +94,7 @@ cd(pathname of migration analyzer directory)
 <li>Install dependencies</li>
 </ol>
 
-```python
+```
 npm install  
 ```
 
@@ -136,8 +136,9 @@ This is the recommended method. It can be done by repository owners and by organ
 	<li>EMU: Migrator role, PAT (Personal Access Token)</li>
 	<li><b>For GitHub version < 3.8.0 ONLY</b> - AWS S3 bucket  (as a temporary storage). To find out what version your GitHub Server is running, scroll down to the bottom of the page on your GitHub homepage. The version should be mentioned in the footer.</li>
 </ul>
-	
-### Migration Steps
+
+<h3>Migration Steps</h3>
+</br>
 
 <p id="1"> </p>
 <details>
@@ -156,7 +157,8 @@ We recommend using S3 in your existing AWS account(s). If you do not have your o
    <li>Create a custom role in the account with AmazonS3FullAccess. Memo the role's ARN for the next step ( should look like: arn:aws:iam::NNNNN:role/XXXXX )</li>
    <li>Ensure assume-role is working and returns temporary credentials. These credentials will be used in Step 3:</li>
 	
-```
+<pre>
+<code>
 aws sso login --profile=<your profile>
 aws sts assume-role --profile=<your profile> \
   --role-arn <your ARN> \
@@ -169,7 +171,8 @@ aws sts assume-role --profile=<your profile> \
     },
     ...
 }
-```
+</code>
+</pre>
 	
 <b>Note</b>: The assume-role session's lifetime is 1 hour (3600 seconds) by default. For larger repo migrations, you may want to extend it with --duration-seconds.
 If you AWS setup doesn’t have SSO, then you can skip the above steps and use the IAM users
