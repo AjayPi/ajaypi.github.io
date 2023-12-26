@@ -355,9 +355,11 @@ GitHub Enterprise Importer does not migrate Git LFS objects. If the source repos
 	<li>Clone the source repo to local</li>
 	<li>Add the URL of the migrated repo to your local, LFS-enabled repo using the following:</li>
 		
-```
+<pre>
+<code>
 git remote add github git@github.com:OWNER/REPO_NAME.git
-```
+</code>
+</pre>
 
 <li>Fetch all LFS objects locally</li>
 
