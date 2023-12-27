@@ -5,12 +5,12 @@
 
 > [!Warning]
 >
-> This document refers to GitHub EMU, which is not yet generally available. For information about GitHub Runers on GitHub Enterprise please refer to this document.
+> This document refers to GitHub EMU, which is not yet generally available. For information about GitHub Runners on GitHub Enterprise please refer to this document.
 
 ## TLDR
 
 - We provide self-hosted runners for GitHub EMU, this is recommended way to run your GitHub Actions
-- For some use cases you can use [GitHub hosted runners](#github-hosted-runners)
+- For some use cases you can use [GitHub hosted runners](#GitHub-hosted-runners)
 - We also configure a special type of runners called ["The Company" Connected Runners](#"The Company"-connected-runners), which can connect to on-premise hardware and devices in "The Company" network
 
 ## How to decide which runners to use?
@@ -18,7 +18,7 @@
 > [!NOTE]  
 > Due to rendering issue the Mermaid diagram is not rendering on the site.
 
-<img src ="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/runner-selection.png">
+<img src ="https://GitHub.com/AjayPi/ajaypi.GitHub.io/raw/main/docs/images/runner-selection.png">
 
 ```mermaid
 flowchart TD
@@ -27,7 +27,7 @@ flowchart TD
     B -->|No| D{Do you need more than 4 vCPU, 6 gig memory ?};
     D -->|Yes| E[Use Large Runners];
     D --> |No| F[Use Default Kubernetes runners];
-    click B "http://www.github.com"
+    click B "http://www.GitHub.com"
     class B Blue;
     classDef Blue fill:lightblue;
 ```
@@ -35,7 +35,7 @@ flowchart TD
 ### Kubernetes Runners
 
 These are ephemeral runners which use fresh kubernetes pod for every GitHub action run.
-They are suitable for jobs which require less than or equal to `4 vCPU` and `6 GiB memory`. These runners use [sysbox](https://github.com/nestybox/sysbox) as container runtime to improve container isolation, enabling them to run workloads similar to a VM (for e.g. they can run docker containers).
+They are suitable for jobs which require less than or equal to `4 vCPU` and `6 GiB memory`. These runners use [sysbox](https://GitHub.com/nestybox/sysbox) as container runtime to improve container isolation, enabling them to run workloads similar to a VM (for e.g. they can run docker containers).
 
 **Example**
 
@@ -60,7 +60,7 @@ jobs:
 These are ephemeral runners which use fresh EC2 instances for every GitHub action run.
 The warm pool is not maintained for these runners, and upon receiving event for the action run, it takes **90 to 120** seconds for these runners to bootup and execute the workload. For efficiency, these runners use the spot capacity.
 
-If you observe that it is taking more than 20 - 30 mins to launch the instance, we recommend you to [cancel](https://docs.github.com/en/actions/managing-workflow-runs/canceling-a-workflow) and [re-run](https://docs.github.com/en/actions/managing-workflow-runs/re-running-workflows-and-jobs) the workflow atleast once, as it can happen due to any of the following:
+If you observe that it is taking more than 20 - 30 mins to launch the instance, we recommend you to [cancel](https://docs.GitHub.com/en/actions/managing-workflow-runs/canceling-a-workflow) and [re-run](https://docs.GitHub.com/en/actions/managing-workflow-runs/re-running-workflows-and-jobs) the workflow at least once, as it can happen due to any of the following:
 - GitHub doesn't retry the failed payload events, which means there is a probability of event being dropped or missed.
 - AWS doesn't have SLA on the boot time of EC2 instance, which means there is a probability of EC2 instance being stuck in boot phase.
 - Spot capacity or spot quota may have been momentarily exhausted.
@@ -137,7 +137,7 @@ jobs:
 These are ephemeral runners which use fresh EC2 instances for every GitHub action run.
 The warm pool is not maintained for these runners, and upon receiving event for the action run, it takes **180 to 300** seconds for these runners to bootup and execute the workload. For efficiency, these runners use the spot capacity. AMI is based on Deep Learning AMI GPU PyTorch 1.13.1 (Ubuntu 20.04). More details in [Aha idea](https://"The Product".ideas.aha.io/ideas/SG-I-105)
 
-If you observe that it is taking more than 20 - 30 mins to launch the instance, we recommend you to [cancel](https://docs.github.com/en/actions/managing-workflow-runs/canceling-a-workflow) and [re-run](https://docs.github.com/en/actions/managing-workflow-runs/re-running-workflows-and-jobs) the workflow atleast once, as it can happen due to any of the following:
+If you observe that it is taking more than 20 - 30 mins to launch the instance, we recommend you to [cancel](https://docs.GitHub.com/en/actions/managing-workflow-runs/canceling-a-workflow) and [re-run](https://docs.GitHub.com/en/actions/managing-workflow-runs/re-running-workflows-and-jobs) the workflow at least once, as it can happen due to any of the following:
 - GitHub doesn't retry the failed payload events, which means there is a probability of event being dropped or missed.
 - AWS doesn't have SLA on the boot time of EC2 instance, which means there is a probability of EC2 instance being stuck in boot phase.
 - Spot capacity or spot quota may have been momentarily exhausted.
@@ -168,7 +168,7 @@ jobs:
 
     You will require to raise request to access these runners. Please refer to the [below table](#runner-specification).
 
-    These runners utilitzes EC2 Spot, if you face issues, please get in get in [touch with us](#how-to-get-in-touch-with-team-if-i-face-issues-or-problems).
+    These runners utilizes EC2 Spot, if you face issues, please get in get in [touch with us](#how-to-get-in-touch-with-team-if-i-face-issues-or-problems).
 
 !!! Warning
 
@@ -176,14 +176,14 @@ jobs:
 
 ### Elastic Machines
 
-Elastic machines is Github runner solution developed and maintained by Github team. "The Product" offers elastic machines control plane to allow our customers to create runners in their own AWS VPC (virtual private cloud) so that they can connect to the required infrastructure.
+Elastic machines is GitHub runner solution developed and maintained by GitHub team. "The Product" offers elastic machines control plane to allow our customers to create runners in their own AWS VPC (virtual private cloud) so that they can connect to the required infrastructure.
 
-"The Product" team only manages the elastic machines control plane, the actual runners should be deployed in each team's AWS account. Elastic machines control plane assumes the IAM role created in the respective team's AWS account to create the Github runners in their VPC. Elastic machines support following providers in AWS
+"The Product" team only manages the elastic machines control plane, the actual runners should be deployed in each team's AWS account. Elastic machines control plane assumes the IAM role created in the respective team's AWS account to create the GitHub runners in their VPC. Elastic machines support following providers in AWS
 
 AWS EC2: The AWS EC2 instance provider allows you to scale runners on EC2 instances without deploying any additional infrastructure (e.g. Auto Scaling groups)
-AWS Autoscaling Group: This provider can be used to scale EC2 instances in an Auto Scaling group. All instances will use the Auto Scaling group's launch template so will have a uniform configuration. This provider is deperecated.
+AWS Autoscaling Group: This provider can be used to scale EC2 instances in an Auto Scaling group. All instances will use the Auto Scaling group's launch template so will have a uniform configuration. This provider is deprecated.
 
-Detailed documentation is available at EMU [sg-innersource elastic-machine-docs repository](https://github.tmc-"The Product".com/wit-"The Product"/elastic-machines-docs)
+Detailed documentation is available at EMU [sg-innersource elastic-machine-docs repository](https://GitHub.tmc-"The Product".com/wit-"The Product"/elastic-machines-docs)
 
 !!! Note
 
@@ -296,7 +296,7 @@ Detailed documentation is available at EMU [sg-innersource elastic-machine-docs 
       <td>Ubuntu 20.04</td>
       <td>amd64</td>
       <td>Job which requires high CPU and Memory (for e.g. OS compilation)</td>
-      <td>Please request your github organization administrator to enable runners via <a href="https://github.tmc-"The Product".com/github-apps/enterprise-multi-runners">Enterprise multi runners</a> github application for the required repository</td>
+      <td>Please request your GitHub organization administrator to enable runners via <a href="https://GitHub.tmc-"The Product".com/GitHub-apps/enterprise-multi-runners">Enterprise multi runners</a> GitHub application for the required repository</td>
       <td>56.64.123.10, 35.77.155.135, 35.78.149.202</td>
       <td>99%</td>
     </tr>
@@ -409,11 +409,11 @@ Please get in touch via <a href="../../../contact-us/">contact us</a> page.
 
 ### About GitHub-hosted runners
 
-- The [GitHub hosted runners](https://docs.github.com/en/enterprise-cloud@latest/actions/using-github-hosted-runners/about-github-hosted-runners) are available to you by default, they have the [following specs and labels](https://docs.github.com/en/enterprise-cloud@latest/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources)
+- The [GitHub hosted runners](https://docs.GitHub.com/en/enterprise-cloud@latest/actions/using-GitHub-hosted-runners/about-GitHub-hosted-runners) are available to you by default, they have the [following specs and labels](https://docs.GitHub.com/en/enterprise-cloud@latest/actions/using-GitHub-hosted-runners/about-GitHub-hosted-runners#supported-runners-and-hardware-resources)
 - We currently have 50,000 minutes of GitHub hosted runners per month for all GitHub users. We haven't established any organization-level limits for the GitHub hosted runners
-- We recommend you to use GitHub hosted runners only for [MacOs and Windows](https://docs.github.com/en/enterprise-cloud@latest/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources) workflows, and use [self-hosted runners](#"The Product"-self-hosted-runners) for all you Linux workflows. The [self-hosted runners](#"The Product"-self-hosted-runners) are cheaper than the GitHub hosted runners and don't consume our monthly minutes
-- Before you start using GitHub hosted runners, please read [GitHub hosted runners pricing](https://docs.github.com/en/enterprise-cloud@latest/billing/managing-billing-for-github-actions/about-billing-for-github-actions) and [GitHub hosted runners limits](https://docs.github.com/en/enterprise-cloud@latest/actions/reference/usage-limits-billing-and-administration#usage-limits)
-- We don't have plans to provide [Large GitHub Hosted Runners](https://docs.github.com/en/enterprise-cloud@latest/actions/using-github-hosted-runners/using-larger-runners)
+- We recommend you to use GitHub hosted runners only for [MacOs and Windows](https://docs.GitHub.com/en/enterprise-cloud@latest/actions/using-GitHub-hosted-runners/about-GitHub-hosted-runners#supported-runners-and-hardware-resources) workflows, and use [self-hosted runners](#"The Product"-self-hosted-runners) for all you Linux workflows. The [self-hosted runners](#"The Product"-self-hosted-runners) are cheaper than the GitHub hosted runners and don't consume our monthly minutes
+- Before you start using GitHub hosted runners, please read [GitHub hosted runners pricing](https://docs.GitHub.com/en/enterprise-cloud@latest/billing/managing-billing-for-GitHub-actions/about-billing-for-GitHub-actions) and [GitHub hosted runners limits](https://docs.GitHub.com/en/enterprise-cloud@latest/actions/reference/usage-limits-billing-and-administration#usage-limits)
+- We don't have plans to provide [Large GitHub Hosted Runners](https://docs.GitHub.com/en/enterprise-cloud@latest/actions/using-GitHub-hosted-runners/using-larger-runners)
 
 ```
 runs-on: [macos-latest]
@@ -443,7 +443,7 @@ The warm pool is not maintained for these runners, and upon execution of the act
 
     You will require to raise request to access these runners. Please refer to the [below table](#runner-specification).
 
-    These runners utilitzes EC2 Spot, if you face issues, please get in [touch with us](#how-to-get-in-touch-with-team-if-i-face-issues-or-problems).
+    These runners utilizes EC2 Spot, if you face issues, please get in [touch with us](#how-to-get-in-touch-with-team-if-i-face-issues-or-problems).
 
 !!! Warning
 
