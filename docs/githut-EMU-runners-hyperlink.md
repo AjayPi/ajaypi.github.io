@@ -1,7 +1,7 @@
 # GitHub EMU Runners
 
 > [!NOTE]  
-> Hyperlinks are only for reference and may noy work.
+> Hyperlinks are only for reference and may not work.
 
 > [!Warning]
 >
