@@ -106,10 +106,10 @@ Mt Fuji aims to remove the burden of your teams, managing infrastructure while p
   </div>
   <div style="flex: 1; padding: 10px;">
   <p><b>Support for most workload types</b></p>
-  <p>Intendended to run all internally developed services. Dedicated infrastructure for both general purpose and GPU / ML workloads.Support for both internal and internet facing services.</p>
+  <p>Intended to run all internally developed services. Dedicated infrastructure for both general purpose and GPU / ML workloads. Support for both internal and internet facing services.</p>
   
   <p><b>CI/CD Integration</b></p>
-  <p>Automated integration into Github to create pipelines to deploy customer workloads with no additional setup.</p>
+  <p>Automated integration into GitHub to create pipelines to deploy customer workloads with no additional setup.</p>
   </div>
   </div>
 
