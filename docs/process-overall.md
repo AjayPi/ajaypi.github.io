@@ -23,7 +23,7 @@
 ## High Level Process flow
 
 > [!NOTE]  
-> The links in the image map below are only to highlight the functionality of linking to different pages and are not teh original links.
+> The links in the image map below are only to highlight the functionality ofusing image maps to link to different pages and are not the original links.
 
  <img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/process-overall.PNG" usemap="#process" >
 
