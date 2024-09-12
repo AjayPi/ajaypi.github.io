@@ -15,7 +15,7 @@
               "border: 5px solid #154360";>
   <tr>
     <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew1.png"></td>
-    <td><span style="color: #1565C0"><b>Lower cost of maintenance,operations </b></span>
+    <td><span style="color: #1565C0"><b>Lower cost of maintenance, operations </b></span>
   </br>
   <ul>
         <li>1 vs “N” environments</li>
