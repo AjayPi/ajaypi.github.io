@@ -304,21 +304,6 @@ Before using the programme, you should validate its status is different from -1.
 }
   </pre>
 </span>
-  </div>
-</div>
-<div style="flex: 1; padding: 10px;">
-<span>
-  <b>Response</b>
-</br>
-  <pre>
-  {
-    "imageUrl": "https://static.company.net/img/1050x300-487479.png",
-    "imageSVG": "https://static.company.net/img/COLLATERAL_PLACEHOLDER.svg",
-    "companyImage": "https://static.company.net/img/COLLATERAL_PLACEHOLDER.jpg",
-    "companyImageSVG": "https://static.company.net/img/COLLATERAL_PLACEHOLDER.svg"
-}
-  </pre>
-</span>
 </div>
 </div>
 
