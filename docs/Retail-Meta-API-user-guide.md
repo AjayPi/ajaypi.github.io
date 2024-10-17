@@ -5,7 +5,7 @@ Version 3.0
 
 ## Introduction
 
-The Retail Meta API empowers Business Unit developers to take full control of integrating their own local retail suppliers, eliminating the need for direct support or resources from the Reward Gateway Innovation Hub. This API serves as a flexible, self-service framework that gives Business Units the autonomy to manage supplier relationships, configure integrations, and quickly respond to market demands.
+The Retail Meta API empowers Business Unit developers to take full control of integrating their own local retail suppliers, eliminating the need for direct support or resources from the Company Innovation Hub. This API serves as a flexible, self-service framework that gives Business Units the autonomy to manage supplier relationships, configure integrations, and quickly respond to market demands.
 By adhering to a standardised set of request and response contracts, Business Units can independently implement supplier connections. This removes the bottleneck of relying on Innovation Hub resources and roadmaps, allowing each unit to prioritise and execute integrations on their own timeline, ensuring faster time-to-market for new offerings.
 Ultimately the Retail Meta API puts the power in the hands of Business Units to efficiently scale their retail ecosystem, allowing them to remain agile, competitive, and customer-focused.
 
@@ -13,13 +13,13 @@ Ultimately the Retail Meta API puts the power in the hands of Business Units to 
 **Why should Business Units use it?**
 
 -	**Advanced functionalit**: The Retail Meta API supports a range of the most common supplier action use cases, including acquiring, redeeming, refunding, balance checking and more.
--	**No dependency on Reward Gateway Innovation Hub**: The Retail Meta API removes dependency on the Reward Gateway Innovation Hub for supplier integrations, allowing Business Units to integrate with local retail suppliers without delays.
+-	**No dependency on Company Innovation Hub**: The Retail Meta API removes dependency on the Company Innovation Hub for supplier integrations, allowing Business Units to integrate with local retail suppliers without delays.
 - **Full control over development**: Since the Retail Meta API doesn’t impose restrictions on how integrations are built, development teams have complete autonomy in designing and implementing solutions that meet their specific needs. Business Units have full autonomy to implement integrations within any tech stack.
 - **Efficient and targeted integration**: By allowing selective connection to only the necessary endpoints, the Retail Meta API enables development teams to focus on what’s essential, streamlining the integration process, and reducing complexity.
 - **Quick time to market and value**: As the Retail Meta API puts the integrations with suppliers in the hands of the Business Units, the time to market is greatly reduced, enhancing the value to Clients. 
  
 ## Transparent Integration
-The key concept behind the Retail Meta API is that it allows for Business Units to  transparently integrate into key Reward Gateway checkout and voucher flows. From the perspective of the end user (the employee) the system will connect to the relevant local supplier without ever interrupting their user journey.
+The key concept behind the Retail Meta API is that it allows for Business Units to  transparently integrate into key Company checkout and voucher flows. From the perspective of the end user (the employee) the system will connect to the relevant local supplier without ever interrupting their user journey.
 
 <img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/metaretail1.png">
   
@@ -29,7 +29,7 @@ The Retail Meta API provides a suite of API-based tools to allow a Business Unit
 
 ### Supplier Management
 
-Reward Gateway considers a supplier to be a third party provider of voucher and eGift codes. When the supplier is managed by the Business Unit, Reward Gateway considers these to be a “local supplier”. The Reward Gateway discounts platform makes use of these local suppliers, and their respective API connections in the checkout process when obtaining a voucher code for the purchaser. The Retail Meta API allows a Business Unit to onboard and manage suppliers for their retail offers in a self-service manner. Using the API a Business Unit can:
+Company considers a supplier to be a third party provider of voucher and eGift codes. When the supplier is managed by the Business Unit, Company considers these to be a “local supplier”. The Company discounts platform makes use of these local suppliers, and their respective API connections in the checkout process when obtaining a voucher code for the purchaser. The Retail Meta API allows a Business Unit to onboard and manage suppliers for their retail offers in a self-service manner. Using the API a Business Unit can:
 
 - Obtain a list of local suppliers for the Business Unit
 -	Add a new local supplier
@@ -41,7 +41,7 @@ Reward Gateway considers a supplier to be a third party provider of voucher and 
 
 ## Product Configuration
 
-Reward Gateway considers a product to be a purchasable item associated with an individual retail offer. These products are linked to the respective supplier that can issue them. The Retail Meta API provides a number of API endpoints to manage products. This gives Business Units complete control over what products are available, and which supplier these products should use.
+Company considers a product to be a purchasable item associated with an individual retail offer. These products are linked to the respective supplier that can issue them. The Retail Meta API provides a number of API endpoints to manage products. This gives Business Units complete control over what products are available, and which supplier these products should use.
 
 Using the Retail Meta API a Business Unit can:
 			
@@ -52,7 +52,7 @@ Using the Retail Meta API a Business Unit can:
 -	Update a product for a specific local supplier
 
 ### Service Action Management
-The primary aim of the Retail Meta API is to allow Business Units to integrate directly with suppliers and enable the use of these suppliers in the checkout process. To this end, when a user enters checkout with a voucher from a local supplier, the Reward Gateway platform will call the Business Unit’s supplier endpoint, as configured through the Retail Meta API, to request the issuance of a voucher through that supplier. Along with issuing vouchers, the Retail Meta API supports a number of different actions, known as services. Each service performs a specific action pertaining to a voucher. 
+The primary aim of the Retail Meta API is to allow Business Units to integrate directly with suppliers and enable the use of these suppliers in the checkout process. To this end, when a user enters checkout with a voucher from a local supplier, the Company platform will call the Business Unit’s supplier endpoint, as configured through the Retail Meta API, to request the issuance of a voucher through that supplier. Along with issuing vouchers, the Retail Meta API supports a number of different actions, known as services. Each service performs a specific action pertaining to a voucher. 
  
 <table>
   <tr style="background-color: #1565C0";
@@ -102,7 +102,7 @@ To assist with self-service administration of the supplier’s available service
 ## Service Workflows
 
 ### Inventory Service
-The Inventory service action allows a voucher provider to inform Reward Gateway, through the Retail Meta API, of the different voucher denominations available. We support both open and fixed denomination vouchers, and can make use of the Inventory service action to ensure requests to issue vouchers meet the requirements of the supplier.
+The Inventory service action allows a voucher provider to inform Company, through the Retail Meta API, of the different voucher denominations available. We support both open and fixed denomination vouchers, and can make use of the Inventory service action to ensure requests to issue vouchers meet the requirements of the supplier.
 
 #### Open vs Fixed Denomination Vouchers
 If the Inventory service indicates the supplier issues open denomination vouchers, we will allow users to select any value for the voucher (within the suppliers minimum and maximum limit). If the voucher supplier indicates the voucher has fixed denominations, we will limit options to the denominations the supplier indicates are available (e.g. €10, €20, €50).
@@ -125,21 +125,21 @@ In the above example workflow, following confirmation of payment we will make a 
  
 ### Redeem Service
 
-The Redeem service is a critical service for many local suppliers, particularly if that supplier opts to initially communicate a voucher token to Reward Gateway, rather than the voucher details themselves. In this context, a voucher token is a placeholder for the actual voucher details; this can be the case when a supplier does not immediately have access to the voucher details and relies on background processes to obtain these. Additionally, for many suppliers this marks the point beyond which the voucher can no longer be refunded. The use of this service is not essential, as some local suppliers may opt to return the voucher code directly to Reward Gateway during dispatch. If this service is used, the type of response can be varied - some suppliers return the voucher code for Reward Gateway to render to the member, others return a URL that the member should be directed to in order to view their voucher.
+The Redeem service is a critical service for many local suppliers, particularly if that supplier opts to initially communicate a voucher token to Company, rather than the voucher details themselves. In this context, a voucher token is a placeholder for the actual voucher details; this can be the case when a supplier does not immediately have access to the voucher details and relies on background processes to obtain these. Additionally, for many suppliers this marks the point beyond which the voucher can no longer be refunded. The use of this service is not essential, as some local suppliers may opt to return the voucher code directly to Company during dispatch. If this service is used, the type of response can be varied - some suppliers return the voucher code for Company to render to the member, others return a URL that the member should be directed to in order to view their voucher.
 
 <img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/metaretail4.png">
  
-In the above workflow example, the member has attempted to view the voucher code. If Reward Gateway does not already hold the required details to display the voucher, such as in cases where this information is not communicated during the dispatch service call, we make a request to the Business Unit’s supplier endpoint for this data. This voucher information is returned to Reward Gateway in the response, and this information is used to show the member the correct voucher code or redirect the member to the page where the voucher details are hosted. The voucher is also marked as “seen”, preventing any subsequent requests to refund this voucher through the interface.
+In the above workflow example, the member has attempted to view the voucher code. If Company does not already hold the required details to display the voucher, such as in cases where this information is not communicated during the dispatch service call, we make a request to the Business Unit’s supplier endpoint for this data. This voucher information is returned to Company in the response, and this information is used to show the member the correct voucher code or redirect the member to the page where the voucher details are hosted. The voucher is also marked as “seen”, preventing any subsequent requests to refund this voucher through the interface.
 
 ### Barcode Service
 
-The Barcode service is a service used by some local suppliers. The purpose of this service is to obtain the barcode data for the voucher, so it can be displayed on the Reward Gateway platform. This service allows Reward Gateway to obtain the correct voucher barcode, or link to the location where the barcode can be viewed.
+The Barcode service is a service used by some local suppliers. The purpose of this service is to obtain the barcode data for the voucher, so it can be displayed on the Company platform. This service allows Company to obtain the correct voucher barcode, or link to the location where the barcode can be viewed.
 
 <img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/metaretail5.png">
  
 ### Fund Service
 
-For reloadable voucher codes, such as the Instant Reloadable Vouchers offered by Reward Gateway for various retailers, there are additional services that may be used to manage the balance of a voucher. One such service is the Fund service, which allows Reward Gateway to add balance to the voucher. This is used in response to a manual checkout for topping up a voucher, or in the case of an automated, recurring purchase (Auto Top-Up) that can be set up in the Reward Gateway platform.
+For reloadable voucher codes, such as the Instant Reloadable Vouchers offered by Company for various retailers, there are additional services that may be used to manage the balance of a voucher. One such service is the Fund service, which allows Company to add balance to the voucher. This is used in response to a manual checkout for topping up a voucher, or in the case of an automated, recurring purchase (Auto Top-Up) that can be set up in the Company platform.
 
 <img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/metaretail6.png">
 
@@ -147,11 +147,11 @@ In the above example, as the result of a purchase to top up their reloadable vou
 
 ### Balance Service
 
-The balance service allows the local supplier to communicate the current balance of the voucher code to Reward Gateway. This is especially useful for reloadable cards, but also can help the member understand what balance is available on their voucher without having to check in-store with the retailer.
+The balance service allows the local supplier to communicate the current balance of the voucher code to Company. This is especially useful for reloadable cards, but also can help the member understand what balance is available on their voucher without having to check in-store with the retailer.
  
 <img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/metaretail7.png">
  
-In the above example, for a reloadable voucher, the member clicks the “check balance” option within My Account. This triggers a Balance service request to the Business Unit’s supplier endpoint, which in turn requests balance details from the local supplier. Some suppliers opt to directly send the balance back to Reward Gateway, whereas others instead opt to send a URL to a page where the member can view the balance.
+In the above example, for a reloadable voucher, the member clicks the “check balance” option within My Account. This triggers a Balance service request to the Business Unit’s supplier endpoint, which in turn requests balance details from the local supplier. Some suppliers opt to directly send the balance back to Company, whereas others instead opt to send a URL to a page where the member can view the balance.
 
 ### Refund Service
 
@@ -159,11 +159,11 @@ The refund service facilitates refunds for unused vouchers. This facility is lim
  
 <img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/metaretail8.png">
  
-In the above example, a refund has been requested by a member for a voucher. The platform requests the refund from the Business Unit’s supplier endpoint, which attempts to request the refund from the local supplier and returns a response via the Retail Meta API to Reward Gateway. If the refund is successful, the member is informed and any funds will be refunded to their payment card.
+In the above example, a refund has been requested by a member for a voucher. The platform requests the refund from the Business Unit’s supplier endpoint, which attempts to request the refund from the local supplier and returns a response via the Retail Meta API to Company. If the refund is successful, the member is informed and any funds will be refunded to their payment card.
 
 ## Building a Retail Meta Endpoint
 
-The Retail Meta Endpoint is implemented by the Business Unit and receives incoming requests from Reward Gateway. The technical implementation of the endpoint is at the full discretion of the Business Unit. Reward Gateway requires that this endpoint conforms to the request and response contracts shared as part of the Retail Meta API implementation, but allows for full flexibility in technology, hosting, and URL path for these endpoints. Furthermore, individual services may have their own endpoints, or all services may share a single endpoint.
+The Retail Meta Endpoint is implemented by the Business Unit and receives incoming requests from Company. The technical implementation of the endpoint is at the full discretion of the Business Unit. Company requires that this endpoint conforms to the request and response contracts shared as part of the Retail Meta API implementation, but allows for full flexibility in technology, hosting, and URL path for these endpoints. Furthermore, individual services may have their own endpoints, or all services may share a single endpoint.
 
 ### Endpoint Authentication
 
@@ -213,7 +213,7 @@ $signature = hash_hmac('sha256', $raw, $secret);
 
 ### Summary
 
-This section aims to outline requirements and API integration endpoints required for onboarding a supplier and defining their products / services onto the Reward Gateway Platform.
+This section aims to outline requirements and API integration endpoints required for onboarding a supplier and defining their products / services onto the Company Platform.
 Environments
 
 <table>
@@ -229,9 +229,9 @@ Environments
  
 ### Prerequisites
 
-The API integrations mentioned in this document require “Partner” level access to Reward Gateway. This MUST be requested from Reward Gateway prior to any integration that may occur.
+The API integrations mentioned in this document require “Partner” level access to Company. This MUST be requested from Company prior to any integration that may occur.
 
-Following successful partner onboarding, Reward Gateway will provide three key metadata required:
+Following successful partner onboarding, Company will provide three key metadata required:
 
 **Partner Access Token
 Partner Refresh Token
@@ -244,7 +244,7 @@ You can find out more about Partner tokens and how to get these here.
       <b>Example Request</b>   
    </br>
       <pre>
-http --form POST "https://identity.rewardgateway.net/access_token" \
+http --form POST "https://identity.company.net/access_token" \
     "grant_type=partner" \
     "client_id=$client_id" \
     "client_secret=$client_secret" \
@@ -268,12 +268,12 @@ http --form POST "https://identity.rewardgateway.net/access_token" \
 </div>
 </div>
 
-### Onboarding and Managing a Supplier in Reward Gateway
+### Onboarding and Managing a Supplier in Company
 
 <img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/metaretail9.png">
  
 
-Onboarding a Supplier into Reward Gateway can be achieved by using the Reward Gateway REST API:
+Onboarding a Supplier into Company can be achieved by using the Company REST API:
 
 <table style="background-color:#808080">
   <tr>
@@ -329,8 +329,8 @@ DELETE/retailmeta/suppliers/{supplierId}
 </tr>
 </table> 
 
-### Managing Services for Suppliers in Reward Gateway
-Adding a Service to an existing supplier can be achieved by using the Reward Gateway REST API:
+### Managing Services for Suppliers in Company
+Adding a Service to an existing supplier can be achieved by using the Company REST API:
 <table style="background-color:#808080">
   <tr>
     <th>Creates new service</br>
@@ -357,11 +357,11 @@ DELETE//retailmeta/suppliers/{supplierId}/services/{serviceId}
 </tr>
 </table>  
   
-### Managing Products for Suppliers in Reward Gateway
+### Managing Products for Suppliers in Company
 
  <img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/metaretail10.png">
 
-Adding a Product to an existing supplier can be achieved by using the Reward Gateway REST API:
+Adding a Product to an existing supplier can be achieved by using the Company REST API:
 <table style="background-color:#808080">
   <tr>
     <th>Creates new product</br>
@@ -417,7 +417,7 @@ These credentials can also be managed locally by the Suppliers using their secre
 ### Run Mode Guides
 
 #### Rate Limiting
-Reward Gateway APIs rely on rate limits to help provide a predictably pleasant experience for users. Rate limits are applied to all API endpoints regardless of which API you use.
+Company APIs rely on rate limits to help provide a predictably pleasant experience for users. Rate limits are applied to all API endpoints regardless of which API you use.
 
 Our current rate limits are set to: 180 requests for a 15 minute window. These limits are per endpoint, per unique ip address. These are also represented through headers in each response returned from the APIs.
 
@@ -446,7 +446,7 @@ The current request / response latency commitment that must be met is 10-15 seco
 
 #### Unhealthy end points
 
-Reward Gateway employs a circuit breaker to ensure end points are identified and are prevented from being used when too many errors occur. E.g: placing products out of stock when too many errors occur or the supplier is not selectable in case of a large number of errors.
+Company employs a circuit breaker to ensure end points are identified and are prevented from being used when too many errors occur. E.g: placing products out of stock when too many errors occur or the supplier is not selectable in case of a large number of errors.
 
 Currently there are two levels at which the circuit breaker will deploy:
 -	**Product**: If there are more than 30 errors in 10 minutes period
@@ -464,7 +464,7 @@ For Refunds and reissues of vouchers the Business Units will need to configure t
 
 #### Conflict Resolution
 
-When a Supplier or Product is deleted, they will no longer be able to be selectable for transactions. The data of the past transactions are stored per Reward Gateway’s Data Retention Policy. 
+When a Supplier or Product is deleted, they will no longer be able to be selectable for transactions. The data of the past transactions are stored per Company’s Data Retention Policy. 
 
 #### Response Codes
 
@@ -521,7 +521,7 @@ Examples of the Retail Meta API user interface available in Reward Manager:
 <img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/metaretail-othuse3.png">
 
 ## Further Assistance
-If you encounter any issues or need to escalate concerns regarding the Meta Retail API, you can submit a ticket through Zendesk, just as you would for other Reward Gateway products.
+If you encounter any issues or need to escalate concerns regarding the Meta Retail API, you can submit a ticket through Zendesk, just as you would for other Company products.
 
 ## Glossary of Terms
 
