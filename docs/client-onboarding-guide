@@ -1,0 +1,52 @@
+Client Onboarding Integration
+Integrating with the Reward Gateway Platform for onboarding clients and members.
+
+Summary
+This document aims to outline requirements and API integration endpoints required for onboarding a client and respective members onto the Reward Gateway Platform.
+
+Environments
+Environment:	URL
+Testing:	https://api.testing.aws.rewardgateway.net
+Production:	https://api.rewardgateway.net
+Prerequisites
+The API integrations mentioned in this document require “Partner” level access to Reward Gateway. This MUST be requested from Reward Gateway prior to any integration that may occur.
+
+Following successful partner onboarding, Reward Gateway will provide three key metadata required:
+
+Partner Access Token
+Partner Refresh Token
+Unique Partner ID
+Onboarding a Client into Reward Gateway
+Onboarding a client into Reward Gateway can be achieved by using the Reward Gateway REST API.
+
+Create a programme
+Open Recipe
+When a request for programme creation is sent, the response contains a programme status:
+
+-1 - programme is not provisioned / not ready for use
+0 - Implementation - programme is prepared for use and configuration
+1 - Live - programme’s Reward Hub is accessible for members
+2 - Closing - the programme is prepared to be closed after 60 days
+3 - Closed - programme is not available
+Before using the programme, you should validate its status is different from -1. Use the following endpoint:
+
+Retrieve programme details
+Open Recipe
+Add or replace the current domain attached to a programme (programme alise)
+
+Update a programme's domain
+Open Recipe
+Edit programme details
+
+Update a programme's details
+Open Recipe
+📘
+Programme status can be changed only from implementation (0) to live (1), from live (1) to closing (2) and from closing (2) to closed (3). Other combinations are not allowed.
+
+Programme Branding
+Update a programme's logo
+Open Recipe
+Update a programme's branding color
+Open Recipe
+Onboarding a Member into a Reward Gateway Client
+Onboarding members into Reward Gateway can be achieved by using the Reward Gateway SCIM API.
