@@ -45,7 +45,8 @@ Onboarding a client into Reward Gateway can be achieved by using the Reward Gate
   <div style="flex: 1; padding: 10px;">
     <span style="color: #1059CD">
       <b>CURL</b>
-      ```
+	    
+      <code>
       curl --location 'https://api.rewardgateway.net/scheme' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json' \
@@ -70,7 +71,7 @@ Onboarding a client into Reward Gateway can be achieved by using the Reward Gate
         }
     }
 }
-```
+</code>
   </div>
   
   <div style="flex: 1; padding: 10px;">
