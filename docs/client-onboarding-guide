@@ -43,8 +43,8 @@ This document aims to outline requirements and API integration endpoints require
 
 <table style="border-radius: 10px";
               "border: 5px solid #154360";>
-<td
-Environment:	URL
+<td>Environment
+:	URL
 Testing:	https://api.testing.aws.rewardgateway.net
 Production:	https://api.rewardgateway.net
 Prerequisites
