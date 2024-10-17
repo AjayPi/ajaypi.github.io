@@ -11,7 +11,7 @@
   * [Migration of GitHub Enterprise to EMU](./docs/migration-from-ghe)
   * [Status Page](./docs/status-page)
   * [Client Onboarding Guide API](./docs/client-onboarding-guide)
-  * [Retail Meta API: User Guide](./docs/Retail-Meta-API-user-guide.md)
+  * [Retail Meta API - User Guide](./docs/Retail-Meta-API-user-guide.md)
   * [Documentation using Confluence](./docs/other-documentation)
 * [Tutorial Examples](./tutorials/index)
   * [Wavefront for your K8 instance"](./tutorials/wavefront-desktop)
