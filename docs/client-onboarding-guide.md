@@ -44,8 +44,7 @@ Onboarding a client into Reward Gateway can be achieved by using the Reward Gate
 <div style="display: flex;">
   <div style="flex: 1; padding: 10px;">
     <span style="color: #1059CD">
-      <b>CURL</b>
-	    
+      <b>CURL</b>   
       <code>
       curl --location 'https://api.rewardgateway.net/scheme' \
     --header 'Accept: application/json' \
@@ -77,7 +76,7 @@ Onboarding a client into Reward Gateway can be achieved by using the Reward Gate
   <div style="flex: 1; padding: 10px;">
 <span>
   Response
-  ```
+  <pre>
   {
    "uuid": "385289a3-b375-4b9e-89f8-ce6d08c449bd",
    "name": "Example Programme Name",
@@ -94,7 +93,7 @@ Onboarding a client into Reward Gateway can be achieved by using the Reward Gate
    "externalLinkFormat": "https://sf.com/{scheme.externalId}",
    "externalAccountId": "0019E00002NyByYQAY"
 }
- ``` 
+</pre>
   </div>
   </div>  
 
