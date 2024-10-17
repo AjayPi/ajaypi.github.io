@@ -41,6 +41,61 @@ Onboarding a client into Reward Gateway can be achieved by using the Reward Gate
 ## Create a programme
 
 ### API
+<div style="display: flex;">
+  <div style="flex: 1; padding: 10px;">
+    <span style="color: #1059CD">
+      <b>CURL</b>
+      ```
+      curl --location 'https://api.rewardgateway.net/scheme' \
+    --header 'Accept: application/json' \
+    --header 'Content-Type: application/json' \
+    --header 'Authorization: Bearer {$partner_token} \
+    --header 'Accept: application/vnd.rewardgateway+json;version=3.0' \
+    --data '{
+   "name": "Example Programme Name",
+   "companyName": "Test Company A",
+   "companyLegalName": "Test Company A Ltd.",
+   "locale": "BE",
+	 "accountManagerId": "afebf833-24e1-4feb-9545-5a587210f3ef",
+   "implementationManagerId": "afebf833-24e1-4feb-9545-5a587210f3ef",
+   "externalAccountId": "0019E00002NyByYQAY",
+   "externalParentAccountId": "0021E05009MoByYRT1",
+	 "externalLinkFormat": "https://sf.com/{scheme.externalId}",
+   "template": {
+        "schemeId": "d6b933ea-b5f5-48cb-9fce-d105902ae5ed",
+        "features": {
+            "layoutName": "Reward Hub Layout",
+            "additionalLanguages": "en_GB|fr_FR|de_DE",
+            "loginConfiguration": true
+        }
+    }
+}
+```
+  </div>
+  
+  <div style="flex: 1; padding: 10px;">
+<span>
+  Response
+  ```
+  {
+   "uuid": "385289a3-b375-4b9e-89f8-ce6d08c449bd",
+   "name": "Example Programme Name",
+   "companyName": "Test Company A",
+   "companyLegalName": "Test Company A Ltd.",
+   "schemeType": "integrated",
+   "localeId": 46,
+   "locale": "BE",
+	 "accountManagerId": "afebf833-24e1-4feb-9545-5a587210f3ef",
+   "implementationManagerId": "afebf833-24e1-4feb-9545-5a587210f3ef",
+   "status": -1,
+   "type": 0,
+   "billingCountry": 46,
+   "externalLinkFormat": "https://sf.com/{scheme.externalId}",
+   "externalAccountId": "0019E00002NyByYQAY"
+}
+ ``` 
+  </div>
+  </div>  
 
 
 When a request for programme creation is sent, the response contains a programme status:
