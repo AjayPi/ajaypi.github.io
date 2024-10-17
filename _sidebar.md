@@ -10,6 +10,7 @@
   * [GitHub EMU Runners: showing mermaid diagrams](./docs/githut-EMU-runners-hyperlink)
   * [Migration of GitHub Enterprise to EMU](./docs/migration-from-ghe)
   * [Status Page](./docs/status-page)
+  * [Client_Onboarding_Guide_API](./docs/client-onboarding-guide)
   * [Documentation using Confluence](./docs/other-documentation)
 * [Tutorial Examples](./tutorials/index)
   * [Wavefront for your K8 instance"](./tutorials/wavefront-desktop)
