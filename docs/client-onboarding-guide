@@ -1,40 +1,7 @@
-## "The Product" Product Overview
-
-## What is "The Product"?
-
-"The Product" is "The Company"’s global development tools and software collaboration platform, it includes:
-
-* **A suite of development tooling** [(GitHub, Jira, Confluence, Artifactory, etc)](./list-of-tools.md) built and managed in a way that helps solve **Legal, IP and tax challenges** to **enable software development collaboration** between "The Company" and affiliated companies.
-* A Compute Infrastructure that **allows software to be delivered quickly and securely** by developers who have no knowledge of infrastructure (coming soon).
-
-## How "The Product" helps you 
- 
-<table style="border-radius: 10px";
-              "border: 5px solid #154360";>
-  <tr>
-    <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew1.png"></td>
-    <td><span style="color: #1565C0"><b>Lower cost of maintenance,operations </b></span>
-  </br>
-  <ul>
-        <li>1 vs “N” environments</li>
-        <li>Standard vs Multiple tools </li>
-      <li>Security monitoring (1 vs “N”)</li></td>
-  <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew2.png"></td>
-  <td><span style="color: #1565C0"><b>Lower cost of software development</b></span>
-  </br>
-  <ul>
-      <li>Better tools</li>
-      <li>Software reuse</li>
-    </ul>
-  </tr>  
-  <tr>
-  <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew3.png"></td>
-  <td><span style="color
-
 
 ## Client Onboarding Integration
 
-Integrating with the "Product" Platform for onboarding clients and members.
+Integrating with the "Company" Platform for onboarding clients and members.
 
 ## Summary
 This document aims to outline requirements and API integration endpoints required for onboarding a client and respective members onto the Reward Gateway Platform.
@@ -43,23 +10,39 @@ This document aims to outline requirements and API integration endpoints require
 
 <table style="border-radius: 10px";
               "border: 5px solid #154360";>
-<td>Environment
-:	URL
-Testing:	https://api.testing.aws.rewardgateway.net
-Production:	https://api.rewardgateway.net
-Prerequisites
+<tr>
+<th>Environment</th>
+<th>URL</th>
+<tr>
+<td>Testing:</td>
+<td>https://api.testing.aws.company.net</td>
+</tr>
+<td>Production:	</td>
+<td>https://api.company.net</td>
+</tr>
+</table>
+
+## Prerequisites
 The API integrations mentioned in this document require “Partner” level access to Reward Gateway. This MUST be requested from Reward Gateway prior to any integration that may occur.
 
 Following successful partner onboarding, Reward Gateway will provide three key metadata required:
 
-Partner Access Token
-Partner Refresh Token
-Unique Partner ID
-Onboarding a Client into Reward Gateway
+
+<ul>
+<li>Partner Access Token</li>
+<li>Partner Refresh Token</li>
+<li>Unique Partner ID</li>
+</ul>
+
+## Onboarding a Client into Reward Gateway
+
 Onboarding a client into Reward Gateway can be achieved by using the Reward Gateway REST API.
 
-Create a programme
-Open Recipe
+## Create a programme
+
+### API
+
+
 When a request for programme creation is sent, the response contains a programme status:
 
 -1 - programme is not provisioned / not ready for use
