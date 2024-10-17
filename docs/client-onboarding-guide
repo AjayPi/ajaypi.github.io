@@ -45,11 +45,13 @@ Onboarding a client into Reward Gateway can be achieved by using the Reward Gate
 
 When a request for programme creation is sent, the response contains a programme status:
 
--1 - programme is not provisioned / not ready for use
-0 - Implementation - programme is prepared for use and configuration
-1 - Live - programme’s Reward Hub is accessible for members
-2 - Closing - the programme is prepared to be closed after 60 days
-3 - Closed - programme is not available
+<ul>
+<li>-1 - programme is not provisioned / not ready for use</li>
+<li>0 - Implementation - programme is prepared for use and configuration</li>
+<li>1 - Live - programme’s Reward Hub is accessible for members</li>
+<li>2 - Closing - the programme is prepared to be closed after 60 days</li>
+<li>3 - Closed - programme is not available</li>
+
 Before using the programme, you should validate its status is different from -1. Use the following endpoint:
 
 Retrieve programme details
@@ -62,8 +64,9 @@ Edit programme details
 
 Update a programme's details
 Open Recipe
-📘
-Programme status can be changed only from implementation (0) to live (1), from live (1) to closing (2) and from closing (2) to closed (3). Other combinations are not allowed.
+
+> [!NOTE]  
+> Programme status can be changed only from implementation (0) to live (1), from live (1) to closing (2) and from closing (2) to closed (3). Other combinations are not allowed.
 
 Programme Branding
 Update a programme's logo
