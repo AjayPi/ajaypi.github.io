@@ -1,10 +1,49 @@
-Client Onboarding Integration
-Integrating with the Reward Gateway Platform for onboarding clients and members.
+## "The Product" Product Overview
 
-Summary
+## What is "The Product"?
+
+"The Product" is "The Company"’s global development tools and software collaboration platform, it includes:
+
+* **A suite of development tooling** [(GitHub, Jira, Confluence, Artifactory, etc)](./list-of-tools.md) built and managed in a way that helps solve **Legal, IP and tax challenges** to **enable software development collaboration** between "The Company" and affiliated companies.
+* A Compute Infrastructure that **allows software to be delivered quickly and securely** by developers who have no knowledge of infrastructure (coming soon).
+
+## How "The Product" helps you 
+ 
+<table style="border-radius: 10px";
+              "border: 5px solid #154360";>
+  <tr>
+    <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew1.png"></td>
+    <td><span style="color: #1565C0"><b>Lower cost of maintenance,operations </b></span>
+  </br>
+  <ul>
+        <li>1 vs “N” environments</li>
+        <li>Standard vs Multiple tools </li>
+      <li>Security monitoring (1 vs “N”)</li></td>
+  <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew2.png"></td>
+  <td><span style="color: #1565C0"><b>Lower cost of software development</b></span>
+  </br>
+  <ul>
+      <li>Better tools</li>
+      <li>Software reuse</li>
+    </ul>
+  </tr>  
+  <tr>
+  <td style="vertical-align:middle"><img src="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/welcomdocnew3.png"></td>
+  <td><span style="color
+
+
+## Client Onboarding Integration
+
+Integrating with the "Product" Platform for onboarding clients and members.
+
+## Summary
 This document aims to outline requirements and API integration endpoints required for onboarding a client and respective members onto the Reward Gateway Platform.
 
-Environments
+## Environments
+
+<table style="border-radius: 10px";
+              "border: 5px solid #154360";>
+<td
 Environment:	URL
 Testing:	https://api.testing.aws.rewardgateway.net
 Production:	https://api.rewardgateway.net
