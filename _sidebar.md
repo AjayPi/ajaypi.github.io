@@ -12,7 +12,7 @@
   * [Status Page](./docs/status-page)
   * [Client Onboarding Guide API](./docs/client-onboarding-guide)
   * [Retail Meta API - User Guide](./docs/Retail-Meta-API-user-guide.md)
-  * [Test](.//docs/test)
+  * [Test](./docs/test)
 * [Documentation using Confluence](./docs/other-documentation)
 * [Tutorial Examples](./tutorials/index)
   * [Wavefront for your K8 instance"](./tutorials/wavefront-desktop)
