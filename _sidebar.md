@@ -13,6 +13,7 @@
   * [Client Onboarding Guide API](./docs/client-onboarding-guide)
   * [Retail Meta API - User Guide](./docs/Retail-Meta-API-user-guide.md)
   * [Documentation using Confluence](./docs/other-documentation)
+  * [Test for card](./docs/card-test.md)
 * [Tutorial Examples](./tutorials/index)
   * [Wavefront for your K8 instance"](./tutorials/wavefront-desktop)
 * [About](./about/index)
