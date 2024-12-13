@@ -18,7 +18,7 @@
 > [!NOTE]  
 > Due to underlying Git rendering issue the Mermaid diagram may not render properly on the site.
 
-<img src ="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/runner-selection.png">
+<img src ="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/mermaid.png">
 
 ```mermaid
 flowchart TD
