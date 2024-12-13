@@ -16,13 +16,18 @@
 ## How to decide which runners to use?
 
 > [!NOTE]  
-> Due to rendering issue the Mermaid diagram is not rendering on the site.
+> Due to underlying Git rendering issue the Mermaid diagram may not render properly on the site.
 
 <img src ="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/runner-selection.png">
 
 <pre class="mermaid">
+    ---
+config:
+  look: handDrawn
+  theme: neutral
+    ---
 flowchart TD
-    A[Start] --> B{Do you need access to on premise hardware or software ?};
+    A[Start] --> B{Do you need access to on premise hardware or software?<a href="http://google.com">};
     B --> |yes| C[Use Connected runners];
     B -->|No| D{Do you need more than 4 vCPU, 6 gig memory ?};
     D -->|Yes| E[Use Large Runners];
