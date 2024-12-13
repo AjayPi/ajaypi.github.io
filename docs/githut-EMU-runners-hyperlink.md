@@ -20,7 +20,7 @@
 
 <img src ="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/runner-selection.png">
 
-```mermaid
+<pre class="mermaid">
 flowchart TD
     A[Start] --> B{Do you need access to on premise hardware or software ?};
     B --> |yes| C[Use Connected runners];
@@ -30,7 +30,8 @@ flowchart TD
     click B "http://www.github.com"
     class B Blue;
     classDef Blue fill:lightblue;
-```
+</pre>
+
 ## "The Product" Self-hosted Runners
 ### Kubernetes Runners
 
