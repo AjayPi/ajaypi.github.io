@@ -21,7 +21,6 @@
 <img src ="https://github.com/AjayPi/ajaypi.github.io/raw/main/docs/images/runner-selection.png">
 
 ```mermaid
-
 flowchart TD
     A[Start] --> B{Do you need access to
 on premise hardware
